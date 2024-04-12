@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Sim ou Não</title>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="question" id="question">
+        <p>eu te amo,me ama ?</p>
+        <div class="buttons">
+          <button id="yes" class="btn-yes">Sim!</button>
+          <button id="no" class="btn-no">Não</button>
+        </div>
+      </div>
+
+      <div class="answer" id="answer">
+        <p> eu te amo tanto,como essa musica fala princesa </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('yes').addEventListener('click', function() {
+        
+        var videoCode = "https://youtu.be/LpwAenS7qzY?si=5C6TaRO3ssZqS72V";
+        
+        // Crie o link para o vídeo do YouTube
+        var videoLink = "https://youtu.be/LpwAenS7qzY?si=5C6TaRO3ssZqS72V" + videoCode;
+        
+        // Abra o vídeo em uma nova aba
+        window.open(videoLink, "_blank");
+      });
+    </script>
+  </body>
+</html>
